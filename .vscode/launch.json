@@ -10,7 +10,6 @@
             "request": "launch",
             "mode": "debug",
             "program": "${file}",
-            "envFile": "${workspaceFolder}/.env"
         },
         {
             "name": "Launch",
@@ -18,7 +17,6 @@
             "request": "launch",
             "mode": "auto",
             "program": "${fileDirname}",
-            "envFile": "${workspaceFolder}/.env",
             "args": []
         }
     ]

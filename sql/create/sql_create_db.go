@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+
 	"github.com/joho/godotenv"
 
 	/*	"html/template"
@@ -55,7 +56,7 @@ func OpenDB() (*sql.DB, error) {
 func main() {
 
 	// load environment variables from .env file
-	godotenv.Load()
+	godotenv.Load("../.env")
 
 	// Open the database
 	db, err := OpenDB()
@@ -70,7 +71,7 @@ func main() {
 	// delete existing tables
 
 	// create new tables
-	
+
 	fmt.Println("Success!!")
 
 	// make sure database closes after exit
